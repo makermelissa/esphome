@@ -14,7 +14,7 @@ PROJECT_COPYRIGHT = '2019, ESPHome'
 PROJECT_URL = 'https://esphome.io/'
 PROJECT_EMAIL = 'contact@esphome.io'
 
-PROJECT_GITHUB_USERNAME = 'esphome'
+PROJECT_GITHUB_USERNAME = 'makermelissa'
 PROJECT_GITHUB_REPOSITORY = 'esphome'
 
 PYPI_URL = 'https://pypi.python.org/pypi/{}'.format(PROJECT_PACKAGE_NAME)
