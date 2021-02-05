@@ -360,7 +360,7 @@ def input_pullup_pin(value):
 def output_pin(value):
     value = validate_gpio_pin(value)
     if CORE.is_esp32:
-        if 34 <= value <= 46:
+        if 34 <= value <= 39:
             raise cv.Invalid("ESP32: GPIO{} (34-39) can only be used as an "
                              "input pin.".format(value))
         return value
