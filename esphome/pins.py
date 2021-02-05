@@ -312,7 +312,7 @@ _ESP_SDIO_PINS = {
 def validate_gpio_pin(value):
     value = _translate_pin(value)
     if CORE.is_esp32:
-        if value < 0 or value > 39:
+        if value < 0 or value > 46:
             raise cv.Invalid(f"ESP32: Invalid pin number: {value}")
         if value in _ESP_SDIO_PINS:
             raise cv.Invalid("This pin cannot be used on ESP32s and is already used by "
@@ -360,7 +360,7 @@ def input_pullup_pin(value):
 def output_pin(value):
     value = validate_gpio_pin(value)
     if CORE.is_esp32:
-        if 34 <= value <= 39:
+        if 34 <= value <= 46:
             raise cv.Invalid("ESP32: GPIO{} (34-39) can only be used as an "
                              "input pin.".format(value))
         return value
